@@ -1,12 +1,24 @@
-# jawl-machine-setup
+# Machine Setup
 :toc: auto
 
-command, tool, package
+// command, tool, package
 
 ## 0. setup machine 
+
+### `pkg` package manager 
+// about: package manager
+typing `pkg` into the terminal shows basic usage and help:
+....
+pkg 
+....
+
+----
+----
+
 .first time only
 ....
 pkg upgrade
+pkg update
 ....
 // pkg search
 // termux-change-repo
@@ -53,8 +65,9 @@ ssh
 pkg install openssh
 ....
 
-### generate keys
+## 2. generate keys
 ....
+ssh-agent
 ssh-keygen 
 ssh-keygen -t ed25519 -C"<email>"
 ssh-add .ssh/id_ed25519
@@ -65,14 +78,14 @@ cat .ssh/id_ed25519.pub
 ### show checksums [info]
 ....
 cd .ssh/
-md5 id_ed25519
+md5sum id_ed25519
 sha256sum id_ed25519
 sha256sum id_ed25519.pub 
 sha1sum id_ed25519*
 md5sum id*
 ....
 
-## repository
+## 3. Repository
 
 ### clone
 ----
@@ -97,3 +110,7 @@ git add setup.history       # adds file to git
 git commit -m"history!"     # commits this file
 git push
 ....
+
+---
+## `~` (tilde)
+~ is home directory
