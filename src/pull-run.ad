@@ -1,0 +1,10 @@
+// pull-run.ad
+
+= pull-run
+
+<<pull-run, chap>>
+<<pull-run#chap>>
+
+== div subtitle
+
+[[chap]]anchor
